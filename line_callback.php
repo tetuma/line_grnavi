@@ -2,7 +2,7 @@
 // ぐるなびアクセスキー
 const GNAVI_ACCESS_KEY = "180222565e51c56e7198ca6d82202b6b";
 const LINE_CHANNEL_ID = "1640679778";
-const LINE_CHANNEL_SECRET = "fbde29280140cb3269c8c9184785d6d0";
+const LINE_CHANNEL_SECRET = "16da3b99d9594f2cb12abd3c9693c36d";
 const LINE_MID = "Ua725114b1412232ec50cf52093d7d394";
 
 $request = file_get_contents('php://input');
@@ -74,7 +74,7 @@ function build_url($jsonObj){
     $lon   = $location->longitude;
     $range = 3;
     // 業態がラーメン屋さんを意味するぐるなびのコード(大業態マスタ取得APIをコールして調査)
-    $category_s = "RSFST08008";
+    $category_s = "RSFST08000";
 
     //URL組み立て
     $url  = sprintf("%s%s%s%s%s%s%s%s%s%s%s%s%s", $uri, "?format=", $format, "&keyid=", $acckey, "&latitude=", $lat,"&longitude=",$lon,"&range=",$range,"&category_s=",$category_s);
