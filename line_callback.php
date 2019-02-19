@@ -74,7 +74,7 @@ function build_url($jsonObj){
     $lon   = $location->longitude;
     $range = 3;
     // 業態がラーメン屋さんを意味するぐるなびのコード(大業態マスタ取得APIをコールして調査)
-    $category_s = "RSFST08000";
+    $category_s = "RSFST08008";
 
     //URL組み立て
     $url  = sprintf("%s%s%s%s%s%s%s%s%s%s%s%s%s", $uri, "?format=", $format, "&keyid=", $acckey, "&latitude=", $lat,"&longitude=",$lon,"&range=",$range,"&category_s=",$category_s);
