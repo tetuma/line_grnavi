@@ -63,7 +63,7 @@ function build_url($jsonObj){
     $uri = "http://api.gnavi.co.jp/RestSearchAPI/20150630/";
 
     //APIアクセスキーは、ぐるなびで取得して設定します。
-    $acckey = "180222565e51c56e7198ca6d82202b6b";
+    $acckey = GNAVI_ACCESS_KEY;
 
     //返却値のフォーマットを変数に入れる
     $format= "json";
