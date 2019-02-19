@@ -44,6 +44,7 @@ function create_http_header(){
     $channel_id = 'X-Line-ChannelID: '.LINE_CHANNEL_ID;
     $channel_secret = 'X-Line-ChannelSecret: '.LINE_CHANNEL_SECRET;
     $mid = 'X-Line-Trusted-User-With-ACL: '.LINE_MID;
+    $channelAccessToken = '<8v7Q2Wosv/C0jdZmzylOycv4TIKF6LBFSzfHloY+MDBw+guQzbyfvJEYXSU8oaVnYNvNC9absNvD+Zi7dfmIuvzdu7wDkKLnRCtxT/3XU3Yme50fFVaFndkDng6b6/PDPUGvHysgDyZhnLQJpW0TGwdB04t89/1O/w1cDnyilFU=>';
     return array($content_type,$channel_id,$channel_secret,$mid);
 }
 
