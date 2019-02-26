@@ -17,7 +17,7 @@ $lat = $event['message']['latitude'];
 $lon = $event['message']['longitude'];
 
 // 送られてきた位置情報を元にぐるなびのAPIにアクセスしてケンタッキーの店舗情報を取得する
-$uri    = 'https://api.gnavi.co.jp/RestSearchAPI/20150630/';
+$uri    = 'https://api.gnavi.co.jp/RestSearchAPI/v3/?fbclid=IwAR1cnbVIvDb-2YkS_R9B7DyJYq6J-A1KwDUKi0FqCx_ezVtw4R_RCEsIGPo';
 $accKey = '180222565e51c56e7198ca6d82202b6b';
 
 $url  = $uri . '?format=json&name=ケンタッキー&range=5&keyid=' . $accKey . '&latitude=' . $lat . '&longitude=' . $lon;
